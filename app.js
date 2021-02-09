@@ -28,7 +28,8 @@ optionsWrapper.addEventListener("click",((e)=>{
   playerOption = e.target.classList[0];
   playerValueEl.innerText = playerOption;
   cpuPick();
-  gameOutcome(cpuOption,playerOption);
+   outcomeEl.innerText="";
+  setTimeout(()=>{
+     gameOutcome(cpuOption,playerOption)},1000);
  }
 ));
-
